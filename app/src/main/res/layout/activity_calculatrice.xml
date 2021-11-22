@@ -5,5 +5,275 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Calculatrice">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="408dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="474dp"
+        android:background="#94D5D2BC"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/affichageCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|end"
+            android:paddingLeft="-10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp"
+            android:text="0"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/touche1"
+        android:layout_width="410dp"
+        android:layout_height="85dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/touche2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/buttonAC"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:text="AC"
+            android:backgroundTint="#000"
+            android:textSize="27dp"
+            android:translationX="16dp"
+            android:translationY="6dp"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/buttonPlusMoins"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:text="+/-"
+            android:textSize="27dp"
+            android:translationX="110dp"
+            android:translationY="-67dp"
+            app:cornerRadius="50dp"
+            android:backgroundTint="#FF018786"/>
+
+        <Button
+            android:id="@+id/buttonPourcentage"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:backgroundTint="#FF018786"
+            android:text="%"
+            android:textSize="27dp"
+            android:translationX="210dp"
+            android:translationY="-140dp" />
+
+        <Button
+            android:id="@+id/buttonDivision"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:backgroundTint="#FF018786"
+            android:text="/"
+            android:textSize="27dp"
+            android:translationX="310dp"
+            android:translationY="-215dp"
+            app:cornerRadius="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/touche2"
+        android:layout_width="415dp"
+        android:layout_height="91dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="349dp">
+        <Button
+            android:id="@+id/buttonSept"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:text="7"
+            android:textSize="27dp"
+            android:translationX="16dp"
+            android:translationY="6dp" />
+        <Button
+            android:id="@+id/buttonHuit"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:textSize="27dp"
+            android:text="8"
+            android:translationX="110dp"
+            android:translationY="-67dp" />
+
+        <Button
+            android:id="@+id/buttonNeuf"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:background="#CDDC39"
+            android:backgroundTint="#CDDC39"
+            android:text="9"
+            android:textSize="27dp"
+            android:translationX="210dp"
+            android:translationY="-140dp" />
+
+        <Button
+            android:id="@+id/buttonFois"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:backgroundTint="#FF018786"
+            android:text="X"
+            android:textSize="27dp"
+            android:translationX="310dp"
+            android:translationY="-215dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/touche3"
+        android:layout_width="414dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="16dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/touche2">
+        <Button
+            android:id="@+id/buttonQuatre"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:text="4"
+            android:textSize="27dp"
+            android:translationX="16dp"
+            android:translationY="6dp" />
+        <Button
+            android:id="@+id/buttonCinq"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:textSize="27dp"
+            android:text="5"
+            android:translationX="110dp"
+            android:translationY="-67dp" />
+
+        <Button
+            android:id="@+id/buttonSix"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+
+
+            android:text="6"
+            android:textSize="27dp"
+            android:translationX="210dp"
+            android:translationY="-140dp" />
+
+        <Button
+            android:id="@+id/buttonMoins"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:backgroundTint="#FF018786"
+            android:text="-"
+            android:textSize="34sp"
+            android:translationX="310dp"
+            android:translationY="-215dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/touche4"
+        android:layout_width="411dp"
+        android:layout_height="86dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="551dp">
+        <Button
+            android:id="@+id/buttonUn"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:text="1"
+            android:textSize="27dp"
+            android:translationX="16dp"
+            android:translationY="6dp" />
+        <Button
+            android:id="@+id/buttonDeux"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:textSize="27dp"
+            android:text="2"
+            android:translationX="110dp"
+            android:translationY="-67dp" />
+
+        <Button
+            android:id="@+id/buttonTrois"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:background="#CDDC39"
+            android:backgroundTint="#CDDC39"
+            android:text="3"
+            android:textSize="27dp"
+            android:translationX="210dp"
+            android:translationY="-140dp" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:backgroundTint="#FF018786"
+            android:text="+"
+            android:textSize="27dp"
+            android:translationX="310dp"
+            android:translationY="-215dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/touche5"
+        android:layout_width="412dp"
+        android:layout_height="85dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="646dp">
+
+        <Button
+            android:id="@+id/buttonZero"
+            android:layout_width="171dp"
+            android:layout_height="73dp"
+            android:text="0"
+            android:textSize="27dp"
+            android:translationX="16dp"
+            android:translationY="6dp" />
+
+
+        <Button
+            android:id="@+id/buttonVirgule"
+            android:layout_width="72dp"
+            android:layout_height="68dp"
+            android:background="#CDDC39"
+            android:backgroundTint="#CDDC39"
+            android:text=","
+            android:textSize="27dp"
+            android:translationX="210dp"
+            android:translationY="-65dp" />
+
+        <Button
+            android:id="@+id/buttonEgale"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:backgroundTint="#FF018786"
+            android:text="="
+            android:textSize="27dp"
+            android:translationX="310dp"
+            android:translationY="-135dp" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
