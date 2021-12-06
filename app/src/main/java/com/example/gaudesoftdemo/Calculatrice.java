@@ -40,7 +40,7 @@ public class Calculatrice extends AppCompatActivity {
 
     private double chiffre1;
     private boolean clicOperateur = false;
-
+    Calculator ne = new Calculator();
 
     public static  String chiffreClick(String str){return str;}
     @Override
